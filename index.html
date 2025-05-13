@@ -3,96 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Braiding Salon</title>
+    <title>Said Alabed | Quantitative Finance Professional</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Welcome to [Your Wife's Name]'s Braiding Salon</h1>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#booking">Booking</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <div class="header-content">
+                <h1>Said Alabed</h1>
+                <p class="tagline">Quantitative Finance | CFA Level II | Data Science</p>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
         </header>
 
         <div class="main-content">
-            <section id="home">
-                <h2>About Us</h2>
-                <p>Welcome to our Braiding Salon. We offer a variety of braiding styles to suit your needs. Our professional braider has years of experience and is dedicated to providing the best service possible.</p>
+            <section id="about" class="section">
+                <div class="section-container">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>I'm a finance professional with a unique combination of quantitative expertise, programming skills, and business acumen. As a CFA Level II candidate with extensive experience in structured finance and data science, I excel at the intersection of finance and technology.</p>
+                            <p>My experience spans securitization, quantitative modeling, and financial engineering, complemented by strong technical skills in Python, SQL, and data analysis. I'm passionate about leveraging data-driven approaches to solve complex financial problems and create value.</p>
+                            <p>I'm fluent in French, English, and Arabic at a native level, allowing me to work effectively in multicultural environments and global markets.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">7+</div>
+                                <div class="stat-label">Years Programming Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">CFA</div>
+                                <div class="stat-label">Level II Passed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">$170M+</div>
+                                <div class="stat-label">Securitized Loans & Receivables</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="services">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Men’s Braids</li>
-                    <li>Bantu Knots</li>
-                    <li>Box Braids</li>
-                    <li>Cornrow Braids</li>
-                    <li>French Curls</li>
-                    <li>Boho Braids</li>
-                    <li>Hair Twists</li>
-                    <li>Marley Twists</li>
-                    <li>Weave Placement</li>
-                    <li>Hair Care</li>
-                    <li>Other Styles</li>
-                </ul>
+            <section id="expertise" class="section alternate">
+                <div class="section-container">
+                    <h2>Areas of Expertise</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Financial Expertise</h3>
+                            <ul class="skill-list">
+                                <li>Securitization & Structured Finance</li>
+                                <li>Fixed Income & Derivatives</li>
+                                <li>Financial Modeling</li>
+                                <li>Asset-Backed Securities</li>
+                                <li>Cash Flow Forecasting</li>
+                                <li>Risk Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Technical Skills</h3>
+                            <ul class="skill-list">
+                                <li>Python (Data Analysis, Financial Modeling)</li>
+                                <li>SQL (T-SQL, Performance Optimization)</li>
+                                <li>ETL Processes (dbt)</li>
+                                <li>Snowflake</li>
+                                <li>R, C#, C++, VBA</li>
+                                <li>Bloomberg Terminal</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Certifications</h3>
+                            <ul class="skill-list">
+                                <li>CFA Level II (Passed)</li>
+                                <li>Bloomberg Market Concepts</li>
+                                <li>BESS - Equity</li>
+                                <li>BESS - Fixed Income</li>
+                                <li>BESS - Commodities</li>
+                                <li>BESS - Forex</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="booking">
-                <h2>Book an Appointment</h2>
-                <form id="booking-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="contact">Contact Information:</label>
-                    <input type="text" id="contact" name="contact" required>
-
-                    <label for="service">Desired Service:</label>
-                    <select id="service" name="service">
-                        <option value="mens-braids">Men’s Braids</option>
-                        <option value="bantu-knots">Bantu Knots</option>
-                        <option value="box-braids">Box Braids</option>
-                        <option value="cornrow-braids">Cornrow Braids</option>
-                        <option value="french-curls">French Curls</option>
-                        <option value="boho-braids">Boho Braids</option>
-                        <option value="hair-twists">Hair Twists</option>
-                        <option value="marley-twists">Marley Twists</option>
-                        <option value="weave-placement">Weave Placement</option>
-                        <option value="hair-care">Hair Care</option>
-                        <option value="other-styles">Other Styles</option>
-                    </select>
-
-                    <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <label for="time">Preferred Time:</label>
-                    <input type="time" id="time" name="time" required>
-
-                    <label for="notes">Additional Notes:</label>
-                    <textarea id="notes" name="notes"></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
+            <section id="experience" class="section">
+                <div class="section-container">
+                    <h2>Professional Experience</h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Structurer</h3>
+                            <div class="company-info">
+                                <span class="company">Africa Link Capital Titrisation</span>
+                                <span class="duration">Oct 2018 - Present</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Led the securitization of $170 million worth of loans and receivables for NSIA BANQUE and CIE</li>
+                            <li>Successfully sold $9 million in Asset Backed Securities that I personally structured</li>
+                            <li>Optimized critical T-SQL scripts, reducing runtime from 24+ hours to 8 minutes for monthly performance reports</li>
+                            <li>Developed statistical models in T-SQL to forecast cashflows for the Electricity for All Program</li>
+                            <li>Participated in talks with the IFC and private investors to secure $130 million for securitization SPVs</li>
+                            <li>Automated production of monthly reports for key stakeholders using C#</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Data Scientist</h3>
+                            <div class="company-info">
+                                <span class="company">Wave Mobile Money</span>
+                                <span class="duration">Previous Position</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Developed heuristic models in SQL to flag internal fraud in contractor operations</li>
+                            <li>Built customer value metrics to improve churn prediction and management</li>
+                            <li>Created Python system to curate Fivetran sync between Intacct Sage API and Snowflake</li>
+                            <li>Implemented ETL processes using dbt</li>
+                            <li>Built funding forecasting application for integration partners</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Analyst</h3>
+                            <div class="company-info">
+                                <span class="company">Societe Generale</span>
+                                <span class="duration">Aug 2018 - Sep 2018</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Prepared daily and weekly market briefings on BRVM indices, sectors, and individual stocks using Bloomberg Terminal</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Junior Analyst</h3>
+                            <div class="company-info">
+                                <span class="company">Ecobank</span>
+                                <span class="duration">May 2018 - Jul 2018</span>
+                            </div>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Issued stock recommendations based on fundamental analysis</li>
+                            <li>Performed research on prospective clients</li>
+                            <li>Developed presentations on the firm's expertise in WAEMU capital markets</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Phone: [Your Phone Number]</p>
-                <p>Email: [Your Email Address]</p>
-                <p>Address: [Your Address]</p>
-                <p>Follow us on social media:</p>
-                <ul>
-                    <li>Instagram: @[Your Instagram Handle]</li>
-                    <li>Facebook: @[Your Facebook Page]</li>
-                </ul>
+            <section id="projects" class="section alternate">
+                <div class="section-container">
+                    <h2>Notable Projects</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h3>FCTC ENERGIES 6.90%</h3>
+                            <p class="project-description">Structured a securitization deal resulting in $60 million worth of notes issued on the WAEMU regional market, with the SPV managing $70 million in assets.</p>
+                            <div class="project-tags">
+                                <span>Securitization</span>
+                                <span>Financial Engineering</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>FCTC NSIA 7%</h3>
+                            <p class="project-description">Structured a complex deal with $70 million worth of notes issued and $100 million of assets under management.</p>
+                            <div class="project-tags">
+                                <span>CLO Selection</span>
+                                <span>T-SQL</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Electricity for All Program</h3>
+                            <p class="project-description">Built and maintained comprehensive database tracking 800,000 users and 30+ million payments, with automated reporting systems.</p>
+                            <div class="project-tags">
+                                <span>Data Engineering</span>
+                                <span>T-SQL</span>
+                                <span>Forecasting</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3>Fraud Detection System</h3>
+                            <p class="project-description">Developed SQL-based heuristic models to detect internal fraud in contractor operations, improving operational security.</p>
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>Risk Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <div class="section-container">
+                    <h2>Education & Credentials</h2>
+                    <div class="education-container">
+                        <div class="education-item">
+                            <h3>Bachelor of Science in Finance</h3>
+                            <p class="institution">Indiana University</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>CFA Program</h3>
+                            <p class="institution">CFA Institute</p>
+                            <p>Level II Passed</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Fundamentals of Quantitative Modeling</h3>
+                            <p class="institution">University of Pennsylvania</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section alternate">
+                <div class="section-container">
+                    <h2>Contact Me</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:alabedsaid@gmail.com">alabedsaid@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+225 84 50 60 30</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/mohamedalabed" target="_blank">linkedin.com/in/mohamedalabed</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Abidjan, Côte d'Ivoire</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Subject">
+                            <textarea placeholder="Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </div>
 
         <footer>
-            <p>&copy; 2024 [Your Wife's Name]'s Braiding Salon. All rights reserved.</p>
+            <p>&copy; 2024 Said Alabed. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </footer>
     </div>
 
