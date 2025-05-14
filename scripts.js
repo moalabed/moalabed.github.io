@@ -32,29 +32,6 @@ document.querySelectorAll('nav a, .footer-links a').forEach(anchor => {
     });
 });
 
-// Handle contact form submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const formData = new FormData(event.target);
-    
-    // Collect form data
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
-    };
-    
-    console.log('Contact Form Data:', data);
-    
-    // Show success message (in a real implementation, you'd send this data to a server)
-    alert('Thank you for your message. I will get back to you soon!');
-    
-    // Reset the form
-    event.target.reset();
-});
-
 // Add animation for stats on scroll
 const stats = document.querySelectorAll('.stat-value');
 let animated = false;
@@ -122,4 +99,82 @@ function highlightNavLink() {
         }
     });
 }
+
+// Orbit Animation with p5.js
+const orbitSketch = (p) => {
+    let particles = [];
+    const numParticles = 5;
+    let canvasContainer;
+    let sunColor, planetColor1, planetColor2, orbitLineColor;
+
+    p.setup = () => {
+        canvasContainer = document.getElementById('orbit-canvas-container');
+        const canvas = p.createCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+        canvas.parent('orbit-canvas-container');
+        p.angleMode(p.DEGREES);
+
+        // Get colors from CSS variables
+        const rootStyles = getComputedStyle(document.documentElement);
+        sunColor = p.color(rootStyles.getPropertyValue('--accent-color').trim());
+        planetColor1 = p.color(rootStyles.getPropertyValue('--secondary-color').trim());
+        planetColor2 = p.color(rootStyles.getPropertyValue('--text-on-primary-color').trim() + '80'); // Lighter with some transparency
+        orbitLineColor = p.color(rootStyles.getPropertyValue('--border-color').trim() + '40'); // Faint border color
+
+        const centerX = p.width / 2;
+        const centerY = p.height / 2;
+        const maxOrbitRadius = p.min(p.width, p.height) / 3;
+
+
+        for (let i = 0; i < numParticles; i++) {
+            particles.push({
+                radius: p.random(maxOrbitRadius * 0.2, maxOrbitRadius),
+                speed: p.random(0.1, 0.5) * (p.random() > 0.5 ? 1 : -1),
+                angle: p.random(360),
+                size: p.random(3, 7),
+                color: p.random() > 0.5 ? planetColor1 : planetColor2
+            });
+        }
+    };
+
+    p.draw = () => {
+        p.clear(); // Use clear() for a transparent background to see header bg
+        const centerX = p.width / 2;
+        const centerY = p.height / 2;
+
+        // Draw Sun
+        p.fill(sunColor);
+        p.noStroke();
+        p.ellipse(centerX, centerY, 15, 15);
+
+        // Draw Particles and Orbits
+        particles.forEach(particle => {
+            const x = centerX + particle.radius * p.cos(particle.angle);
+            const y = centerY + particle.radius * p.sin(particle.angle);
+
+            // Draw orbit line
+            p.noFill();
+            p.stroke(orbitLineColor);
+            p.strokeWeight(0.5);
+            p.ellipse(centerX, centerY, particle.radius * 2, particle.radius * 2);
+
+            // Draw particle
+            p.fill(particle.color);
+            p.noStroke();
+            p.ellipse(x, y, particle.size, particle.size);
+
+            particle.angle += particle.speed;
+        });
+    };
+
+    p.windowResized = () => {
+        if (canvasContainer) {
+            p.resizeCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+        }
+    };
+};
+
+// Ensure the DOM is loaded before trying to get the container and CSS variables
+document.addEventListener('DOMContentLoaded', () => {
+    new p5(orbitSketch);
+});
 

@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Alabed | Quantitative Finance Professional</title>
+    <title>Said Alabed | Quantitative Finance & Financial Engineering</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
+            <div id="orbit-canvas-container"></div>
             <div class="header-content">
                 <h1>Said Alabed</h1>
-                <p class="tagline">Quantitative Finance | CFA Level II | Data Science</p>
+                <p class="tagline">Driving Alpha Through Advanced Analytics, Structuring & Global Dealmaking</p>
                 <nav>
                     <a href="#about">About</a>
                     <a href="#expertise">Expertise</a>
@@ -27,26 +29,11 @@
         <div class="main-content">
             <section id="about" class="section">
                 <div class="section-container">
-                    <h2>About Me</h2>
+                    <h2>Profile</h2>
                     <div class="about-content">
                         <div class="about-text">
-                            <p>I'm a finance professional with a unique combination of quantitative expertise, programming skills, and business acumen. As a CFA Level II candidate with extensive experience in structured finance and data science, I excel at the intersection of finance and technology.</p>
-                            <p>My experience spans securitization, quantitative modeling, and financial engineering, complemented by strong technical skills in Python, SQL, and data analysis. I'm passionate about leveraging data-driven approaches to solve complex financial problems and create value.</p>
-                            <p>I'm fluent in French, English, and Arabic at a native level, allowing me to work effectively in multicultural environments and global markets.</p>
-                        </div>
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <div class="stat-value">7+</div>
-                                <div class="stat-label">Years Programming Experience</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-value">CFA</div>
-                                <div class="stat-label">Level II Passed</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-value">$170M+</div>
-                                <div class="stat-label">Securitized Loans & Receivables</div>
-                            </div>
+                            <p>My work centers on the practical execution of quantitative finance: structuring significant deals, building robust predictive models, and navigating global markets. Native fluency in French, English, and Arabic is a functional asset for sourcing and closing international transactions. The objective is to develop and implement sound financial architecture.</p>
+                            <p>The track record is clear: led the securitization of over $170 million in assets, and personally engineered and placed $9 million in Asset-Backed Securities. This stems from direct experience with the full lifecycle of financial instruments, rigorous quantitative modeling, and financial engineering. A CFA Level II designation provides the framework. The priority is delivering well-engineered financial solutions that work.</p>
                         </div>
                     </div>
                 </div>
@@ -54,48 +41,48 @@
 
             <section id="expertise" class="section alternate">
                 <div class="section-container">
-                    <h2>Areas of Expertise</h2>
+                    <h2>Core Competencies</h2>
                     <div class="skills-container">
-                        <div class="skill-category">
-                            <h3>Financial Expertise</h3>
-                            <ul class="skill-list">
-                                <li>Securitization & Structured Finance</li>
-                                <li>Fixed Income & Derivatives</li>
-                                <li>Financial Modeling</li>
-                                <li>Asset-Backed Securities</li>
-                                <li>Cash Flow Forecasting</li>
-                                <li>Risk Analysis</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Technical Skills</h3>
-                            <ul class="skill-list">
-                                <li>Python (Data Analysis, Financial Modeling)</li>
-                                <li>SQL (T-SQL, Performance Optimization)</li>
-                                <li>ETL Processes (dbt)</li>
-                                <li>Snowflake</li>
-                                <li>R, C#, C++, VBA</li>
-                                <li>Bloomberg Terminal</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Certifications</h3>
-                            <ul class="skill-list">
-                                <li>CFA Level II (Passed)</li>
-                                <li>Bloomberg Market Concepts</li>
-                                <li>BESS - Equity</li>
-                                <li>BESS - Fixed Income</li>
-                                <li>BESS - Commodities</li>
-                                <li>BESS - Forex</li>
-                            </ul>
-                        </div>
+                        <!-- Financial Engineering & Structuring -->
+                        <h4><i class="fas fa-drafting-compass"></i> Financial Engineering & Structuring</h4>
+                        <ul class="skill-list unified">
+                            <li><i class="fas fa-file-invoice-dollar"></i> Securitization & Structured Finance</li>
+                            <li><i class="fas fa-chart-area"></i> Fixed Income & Derivatives</li>
+                            <li><i class="fas fa-calculator"></i> Financial Modeling</li>
+                            <li><i class="fas fa-coins"></i> Asset-Backed Securities</li>
+                            <li><i class="fas fa-tasks"></i> Cash Flow Forecasting</li>
+                            <li><i class="fas fa-shield-alt"></i> Risk Analysis</li>
+                        </ul>
+
+                        <!-- Technical Stack -->
+                        <h4><i class="fas fa-laptop-code"></i> Quantitative & Technical Stack</h4>
+                        <ul class="skill-list unified">
+                            <li><i class="fab fa-python"></i> Python (Pandas, NumPy, SciPy, Scikit-learn for Data Analysis, Quantitative Modeling & ML)</li>
+                            <li><i class="fas fa-database"></i> SQL (T-SQL, Performance Optimization)</li>
+                            <li><i class="fas fa-cogs"></i> ETL Processes (dbt)</li>
+                            <li><i class="fas fa-snowflake"></i> Snowflake</li>
+                            <li><i class="fas fa-cloud"></i> Cloud Platforms (<i class="fab fa-aws"></i> AWS, <i class="fab fa-microsoft"></i> Azure, <i class="fab fa-google"></i> GCP) for scalable financial analytics & model deployment</li>
+                            <li><i class="fab fa-r-project"></i> R, <i class="fas fa-code"></i> C#, <i class="fas fa-code"></i> C++, <i class="fas fa-file-code"></i> VBA</li>
+                            <li><i class="fas fa-chart-line"></i> Bloomberg Terminal</li>
+                        </ul>
+
+                        <!-- Certifications -->
+                        <h4><i class="fas fa-certificate"></i> Certifications & Credentials</h4>
+                        <ul class="skill-list unified">
+                            <li><i class="fas fa-award"></i> CFA Level II (Passed)</li>
+                            <li><i class="fas fa-book-open"></i> Bloomberg Market Concepts</li>
+                            <li><i class="fas fa-certificate"></i> BESS - Equity</li>
+                            <li><i class="fas fa-certificate"></i> BESS - Fixed Income</li>
+                            <li><i class="fas fa-certificate"></i> BESS - Commodities</li>
+                            <li><i class="fas fa-certificate"></i> BESS - Forex</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
             <section id="experience" class="section">
                 <div class="section-container">
-                    <h2>Professional Experience</h2>
+                    <h2>Track Record</h2>
                     <div class="experience-item">
                         <div class="experience-header">
                             <h3>Structurer</h3>
@@ -107,6 +94,7 @@
                         <ul class="experience-details">
                             <li>Led the securitization of $170 million worth of loans and receivables for NSIA BANQUE and CIE</li>
                             <li>Successfully sold $9 million in Asset Backed Securities that I personally structured</li>
+                            <li>Engineered a proprietary AI-driven valuation model for illiquid assets, significantly improving pricing accuracy and portfolio risk assessment for novel securitization structures.</li>
                             <li>Optimized critical T-SQL scripts, reducing runtime from 24+ hours to 8 minutes for monthly performance reports</li>
                             <li>Developed statistical models in T-SQL to forecast cashflows for the Electricity for All Program</li>
                             <li>Participated in talks with the IFC and private investors to secure $130 million for securitization SPVs</li>
@@ -123,6 +111,7 @@
                             </div>
                         </div>
                         <ul class="experience-details">
+                            <li>Designed and deployed a real-time, machine learning-based fraud detection system processing millions of transactions daily, demonstrably reducing fraudulent losses by over 15% within six months of implementation.</li>
                             <li>Developed heuristic models in SQL to flag internal fraud in contractor operations</li>
                             <li>Built customer value metrics to improve churn prediction and management</li>
                             <li>Created Python system to curate Fivetran sync between Intacct Sage API and Snowflake</li>
@@ -163,7 +152,7 @@
 
             <section id="projects" class="section alternate">
                 <div class="section-container">
-                    <h2>Notable Projects</h2>
+                    <h2>Project Highlights</h2>
                     <div class="project-grid">
                         <div class="project-card">
                             <h3>FCTC ENERGIES 6.90%</h3>
@@ -225,7 +214,7 @@
 
             <section id="contact" class="section alternate">
                 <div class="section-container">
-                    <h2>Contact Me</h2>
+                    <h2>Contact</h2>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -233,7 +222,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <p>+225 84 50 60 30</p>
+                            <p>+14377551732</p>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
@@ -241,17 +230,8 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Abidjan, Côte d'Ivoire</p>
+                            <p>Toronto, Canada</p>
                         </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contact-form">
-                            <input type="text" placeholder="Name" required>
-                            <input type="email" placeholder="Email" required>
-                            <input type="text" placeholder="Subject">
-                            <textarea placeholder="Message" required></textarea>
-                            <button type="submit">Send Message</button>
-                        </form>
                     </div>
                 </div>
             </section>
